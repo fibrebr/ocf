@@ -60,8 +60,9 @@ OXA_FILEHD_DD_BS_KB=32
 
 ##Ofelia Debian VM configurator parameters
 '''Kernel and initrd that will be used by machines'''
-OXA_XEN_SERVER_KERNEL="/boot/vmlinuz-2.6.32-5-xen-amd64"
-OXA_XEN_SERVER_INITRD="/boot/initrd.img-2.6.32-5-xen-amd64"
+import platform
+OXA_XEN_SERVER_KERNEL="/boot/vmlinuz-"+platform.uname()[2]
+OXA_XEN_SERVER_INITRD="/boot/initrd.img-"+platform.uname()[2]
 
 '''Debian-family usual file locations'''
 OXA_DEBIAN_INTERFACES_FILE_LOCATION = "/etc/network/interfaces"
