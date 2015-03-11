@@ -73,5 +73,5 @@ XMLRPC_SERVER_PASSWORD = "changeMe"
 ##LOG_LEVEL = "WARNING"
 
 import platform
-OXA_XEN_SERVER_KERNEL=\"/boot/vmlinuz-\"+platform.uname()[2]
-OXA_XEN_SERVER_INITRD=\"/boot/initrd.img-\"+platform.uname()[2]
+OXA_XEN_SERVER_KERNEL="/boot/vmlinuz-"+platform.uname()[2]
+OXA_XEN_SERVER_INITRD="/boot/initrd.img-"+platform.uname()[2]
